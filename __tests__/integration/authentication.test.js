@@ -66,7 +66,7 @@ describe("Authentication", () => {
   it("should not be able to access private routes with invalid token", async () => {
     const user = await factory.create("User");
     const response = await request(app)
-      .get(`/users/${user.id}`)
+      .get(`/users/me`)
       .set("Authorization", `Bearer wrongToken`);
 
     expect(response.status).toBe(401);
