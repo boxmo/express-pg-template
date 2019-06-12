@@ -1,0 +1,35 @@
+{
+  "development": {
+    "username": "boxmo",
+    "password": null,
+    "database": "template_development",
+    "host": "127.0.0.1",
+    "logging": false,
+    "dialect": "postgres",
+    "define": {
+      "timestamps": true,
+      "underscored": true,
+      "underscoredAll": true
+    }
+  },
+  "test": {
+    "username": "boxmo",
+    "password": null,
+    "database": "template_test",
+    "host": "127.0.0.1",
+    "logging": false,
+    "dialect": "postgres",
+    "define": {
+      "timestamps": true,
+      "underscored": true,
+      "underscoredAll": true
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "template_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
